@@ -1,6 +1,6 @@
-/* ========================================
+/* ==============================
    DASAR
-======================================== */
+============================== */
 
 * {
     box-sizing: border-box;
@@ -19,9 +19,9 @@ img {
 }
 
 
-/* ========================================
+/* ==============================
    NAVBAR
-======================================== */
+============================== */
 
 .navbar-custom {
     background-color: #f4fa9f;
@@ -54,9 +54,9 @@ img {
 }
 
 
-/* ========================================
+/* ==============================
    HERO
-======================================== */
+============================== */
 
 .hero {
     background-color: #dff0a8;
@@ -78,9 +78,9 @@ img {
 }
 
 
-/* ========================================
+/* ==============================
    SECTION
-======================================== */
+============================== */
 
 .section {
     padding: 70px 0;
@@ -101,9 +101,9 @@ img {
 }
 
 
-/* ========================================
-   INFO CARD
-======================================== */
+/* ==============================
+   CARD UMUM
+============================== */
 
 .info-card {
     height: 100%;
@@ -140,9 +140,114 @@ img {
 }
 
 
-/* ========================================
+/* ==============================
+   FLORA & FAUNA
+============================== */
+
+.flora-container,
+.fauna-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+/* ==============================
+   KARTU FLORA & FAUNA
+============================== */
+
+.flora-card,
+.fauna-card {
+    width: 100%;
+    min-height: 500px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e1e8c5;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.flora-card:hover,
+.fauna-card:hover {
+    transform: translateY(-7px);
+}
+
+
+/* ==============================
+   FOTO FLORA & FAUNA
+============================== */
+
+.flora-card img,
+.fauna-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+/* ==============================
+   KHUSUS BURUNG KUNTUL & IKAN BETOK
+   AGAR FOTO TIDAK TERPOTONG
+============================== */
+
+.fauna-card img[alt="Burung Kuntul"],
+.fauna-card img[alt="Ikan Betok"] {
+    object-fit: contain;
+    background-color: #f5f5f5;
+}
+
+
+/* ==============================
+   JUDUL FLORA & FAUNA
+============================== */
+
+.flora-card h3,
+.fauna-card h3 {
+    color: #52783b;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+
+/* ==============================
+   NAMA ILMIAH
+============================== */
+
+.flora-card .nama-ilmiah,
+.fauna-card .nama-ilmiah {
+    color: #777;
+    font-size: 16px;
+    margin: 0 0 12px 0;
+}
+
+
+/* ==============================
+   DESKRIPSI
+============================== */
+
+.flora-card > p:last-child,
+.fauna-card > p:last-child {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* ==============================
    SOFT BOX
-======================================== */
+============================== */
 
 .soft-box {
     padding: 45px;
@@ -171,9 +276,9 @@ img {
 }
 
 
-/* ========================================
+/* ==============================
    NUMBER BOX
-======================================== */
+============================== */
 
 .number-box {
     padding: 30px;
@@ -209,180 +314,9 @@ img {
 }
 
 
-/* ========================================
-   FLORA
-======================================== */
-
-.flora-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1150px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.flora-card {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #e1e8c5;
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
-    min-height: 430px;
-}
-
-.flora-card:hover {
-    transform: translateY(-7px);
-}
-
-.flora-card img {
-    display: block;
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-.flora-card h3 {
-    color: #52783b;
-    font-size: 23px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.flora-card .nama-ilmiah {
-    color: #777;
-    font-size: 16px;
-    margin-bottom: 12px;
-}
-
-.flora-card > p:last-child {
-    color: #555;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-/* ========================================
-   FAUNA - UKURAN BESAR
-======================================== */
-
-.fauna-section {
-    width: 100%;
-    padding: 70px 30px;
-}
-
-.fauna-container {
-    width: 100%;
-    max-width: 100%;
-    margin: 40px auto;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-
-    padding: 0 20px;
-}
-
-.fauna-card {
-    width: 100%;
-    min-height: 500px;
-
-    background-color: white;
-    padding: 20px;
-
-    border: 1px solid #e1e8c5;
-    border-radius: 18px;
-
-    text-align: center;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-
-    transition: 0.3s;
-}
-
-.fauna-card:hover {
-    transform: translateY(-7px);
-}
-
-.fauna-card img {
-    display: block;
-
-    width: 100%;
-    height: 280px;
-
-    object-fit: cover;
-
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-.fauna-card h3 {
-    color: #52783b;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.fauna-card .nama-ilmiah {
-    color: #777;
-    font-size: 16px;
-    margin-bottom: 12px;
-}
-
-.fauna-card > p:last-child {
-    color: #555;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-
-/* TABLET */
-
-@media (max-width: 992px) {
-
-    .fauna-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-/* HP */
-
-@media (max-width: 768px) {
-
-    .fauna-section {
-        padding: 50px 15px;
-    }
-
-    .fauna-container {
-        grid-template-columns: 1fr;
-        padding: 0 10px;
-    }
-
-    .fauna-card img {
-        height: 250px;
-    }
-
-}
-
-
-/* ========================================
-   RANTAI MAKANAN
-======================================== */
-
-.soft-box img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* ========================================
-   ANCAMAN & PELESTARIAN
-======================================== */
+/* ==============================
+   MATERI
+============================== */
 
 .materi {
     padding: 70px 0;
@@ -421,11 +355,6 @@ img {
     line-height: 1.7;
 }
 
-
-/* ========================================
-   GAMBAR ANCAMAN
-======================================== */
-
 .ancaman-image {
     display: block;
     width: 100%;
@@ -437,9 +366,9 @@ img {
 }
 
 
-/* ========================================
+/* ==============================
    KONTAK
-======================================== */
+============================== */
 
 .kontak {
     padding: 70px 0;
@@ -498,9 +427,9 @@ img {
 }
 
 
-/* ========================================
-   BUTTON
-======================================== */
+/* ==============================
+   TOMBOL
+============================== */
 
 .btn-custom {
     background-color: #8fbd4f;
@@ -515,11 +444,6 @@ img {
     background-color: #6f9f3d;
     color: white;
 }
-
-
-/* ========================================
-   TOMBOL KEMBALI
-======================================== */
 
 .btn-kembali {
     display: inline-block;
@@ -541,9 +465,9 @@ img {
 }
 
 
-/* ========================================
+/* ==============================
    FOOTER
-======================================== */
+============================== */
 
 .footer {
     background-color: #31552d;
@@ -569,9 +493,9 @@ img {
 }
 
 
-/* ========================================
+/* ==============================
    RESPONSIVE TABLET
-======================================== */
+============================== */
 
 @media (max-width: 992px) {
 
@@ -583,18 +507,16 @@ img {
         font-size: 38px;
     }
 
-    /* FLORA DAN FAUNA SAMA */
     .flora-container,
     .fauna-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 
-/* ========================================
+/* ==============================
    RESPONSIVE HP
-======================================== */
+============================== */
 
 @media (max-width: 768px) {
 
@@ -618,27 +540,30 @@ img {
         font-size: 28px;
     }
 
-    .soft-box {
-        padding: 25px;
-    }
-
-    /* FLORA DAN FAUNA SAMA */
     .flora-container,
     .fauna-container {
         grid-template-columns: 1fr;
         padding: 0 15px;
+        gap: 25px;
     }
 
-    /* FLORA DAN FAUNA SAMA */
     .flora-card,
     .fauna-card {
         min-height: auto;
     }
 
-    /* FLORA DAN FAUNA SAMA */
     .flora-card img,
     .fauna-card img {
         height: 250px;
+    }
+
+    .fauna-card img[alt="Burung Kuntul"],
+    .fauna-card img[alt="Ikan Betok"] {
+        object-fit: contain;
+    }
+
+    .soft-box {
+        padding: 25px;
     }
 
     .materi {
@@ -652,13 +577,12 @@ img {
     .kontak {
         padding: 50px 20px;
     }
-
 }
 
 
-/* ========================================
+/* ==============================
    RESPONSIVE HP KECIL
-======================================== */
+============================== */
 
 @media (max-width: 480px) {
 
@@ -686,4 +610,13 @@ img {
         padding: 22px;
     }
 
+    .flora-card img,
+    .fauna-card img {
+        height: 220px;
+    }
+
+    .fauna-card img[alt="Burung Kuntul"],
+    .fauna-card img[alt="Ikan Betok"] {
+        object-fit: contain;
+    }
 }
