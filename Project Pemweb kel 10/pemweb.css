@@ -161,6 +161,15 @@ img {
     line-height: 1.8;
 }
 
+.soft-box img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+}
+
 
 /* ========================================
    NUMBER BOX
@@ -177,17 +186,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 45px;
     height: 45px;
-
     margin-bottom: 12px;
-
     background-color: #8fbd4f;
     color: white;
-
     border-radius: 50%;
-
     font-weight: bold;
 }
 
@@ -212,9 +216,8 @@ img {
 .flora-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-
-    max-width: 1100px;
+    gap: 30px;
+    max-width: 1150px;
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -222,108 +225,163 @@ img {
 .flora-card {
     background-color: white;
     padding: 20px;
-
     border: 1px solid #e1e8c5;
-    border-radius: 15px;
-
+    border-radius: 18px;
     text-align: center;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
+    min-height: 430px;
 }
 
 .flora-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-7px);
 }
 
 .flora-card img {
+    display: block;
     width: 100%;
-    height: 200px;
+    height: 230px;
     object-fit: cover;
-
-    border-radius: 10px;
-    margin-bottom: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .flora-card h3 {
     color: #52783b;
+    font-size: 23px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
-.flora-card p {
-    color: #666;
+.flora-card .nama-ilmiah {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 12px;
 }
 
-
+.flora-card > p:last-child {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
 /* ========================================
-   FAUNA
+   FAUNA - UKURAN BESAR
 ======================================== */
 
+.fauna-section {
+    width: 100%;
+    padding: 70px 30px;
+}
+
 .fauna-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px auto;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 30px;
 
-    max-width: 1100px;
-    margin: 40px auto;
     padding: 0 20px;
 }
 
 .fauna-card {
+    width: 100%;
+    min-height: 500px;
+
     background-color: white;
     padding: 20px;
 
     border: 1px solid #e1e8c5;
-    border-radius: 15px;
+    border-radius: 18px;
 
     text-align: center;
 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 
     transition: 0.3s;
 }
 
 .fauna-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-7px);
 }
 
 .fauna-card img {
+    display: block;
+
     width: 100%;
-    height: 200px;
+    height: 280px;
+
     object-fit: cover;
 
-    border-radius: 10px;
-    margin-bottom: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .fauna-card h3 {
     color: #52783b;
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
-.fauna-card p {
-    color: #666;
+.fauna-card .nama-ilmiah {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.fauna-card > p:last-child {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+    .fauna-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* HP */
+
+@media (max-width: 768px) {
+
+    .fauna-section {
+        padding: 50px 15px;
+    }
+
+    .fauna-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .fauna-card img {
+        height: 250px;
+    }
+
 }
 
 
 /* ========================================
-   GAMBAR RANTAI MAKANAN
+   RANTAI MAKANAN
 ======================================== */
 
 .soft-box img {
-    display: block;
     max-width: 100%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
 /* ========================================
-   MATERI ANCAMAN & PELESTARIAN
+   ANCAMAN & PELESTARIAN
 ======================================== */
 
 .materi {
@@ -363,13 +421,17 @@ img {
     line-height: 1.7;
 }
 
+
+/* ========================================
+   GAMBAR ANCAMAN
+======================================== */
+
 .ancaman-image {
     display: block;
     width: 100%;
     max-width: 700px;
     height: auto;
     margin: 30px auto;
-
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
@@ -397,9 +459,7 @@ img {
 .kontak form {
     background-color: white;
     padding: 30px;
-
     border-radius: 15px;
-
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -412,10 +472,8 @@ img {
 .kontak input,
 .kontak textarea {
     width: 100%;
-
     border: 1px solid #ccd8a8;
     border-radius: 8px;
-
     padding: 10px;
 }
 
@@ -423,7 +481,6 @@ img {
 .kontak textarea:focus {
     border-color: #8fbd4f;
     outline: none;
-
     box-shadow: 0 0 0 3px rgba(143, 189, 79, 0.2);
 }
 
@@ -442,13 +499,55 @@ img {
 
 
 /* ========================================
+   BUTTON
+======================================== */
+
+.btn-custom {
+    background-color: #8fbd4f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #6f9f3d;
+    color: white;
+}
+
+
+/* ========================================
+   TOMBOL KEMBALI
+======================================== */
+
+.btn-kembali {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 22px;
+    background-color: #8fbd4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background-color: #6f9f3d;
+    color: white;
+}
+
+
+/* ========================================
    FOOTER
 ======================================== */
 
 .footer {
     background-color: #31552d;
     color: white;
-
     padding: 45px 0 25px;
     margin-top: 30px;
 }
@@ -471,27 +570,6 @@ img {
 
 
 /* ========================================
-   BUTTON
-======================================== */
-
-.btn-custom {
-    background-color: #8fbd4f;
-    color: white;
-    border: none;
-
-    padding: 10px 20px;
-    border-radius: 8px;
-
-    font-weight: bold;
-}
-
-.btn-custom:hover {
-    background-color: #6f9f3d;
-    color: white;
-}
-
-
-/* ========================================
    RESPONSIVE TABLET
 ======================================== */
 
@@ -505,10 +583,12 @@ img {
         font-size: 38px;
     }
 
+    /* FLORA DAN FAUNA SAMA */
     .flora-container,
     .fauna-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 
@@ -542,14 +622,23 @@ img {
         padding: 25px;
     }
 
+    /* FLORA DAN FAUNA SAMA */
     .flora-container,
     .fauna-container {
         grid-template-columns: 1fr;
+        padding: 0 15px;
     }
 
+    /* FLORA DAN FAUNA SAMA */
+    .flora-card,
+    .fauna-card {
+        min-height: auto;
+    }
+
+    /* FLORA DAN FAUNA SAMA */
     .flora-card img,
     .fauna-card img {
-        height: 220px;
+        height: 250px;
     }
 
     .materi {
