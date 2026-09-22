@@ -161,9 +161,9 @@ img {
 
 .flora-card,
 .fauna-card {
+    background-color: #dff0a8;
     width: 100%;
     min-height: 500px;
-    background-color: white;
     padding: 20px;
     border: 1px solid #e1e8c5;
     border-radius: 18px;
@@ -256,7 +256,7 @@ img {
 }
 
 .soft-box h2 {
-    color: #31552d;
+    color: #2e5d34;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -282,7 +282,7 @@ img {
 
 .number-box {
     padding: 30px;
-    background-color: white;
+    background-color: #dff0a8;;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -313,155 +313,250 @@ img {
     margin-bottom: 25px;
 }
 
-
-/* ==============================
-   MATERI
-============================== */
+/* =========================
+   BAGIAN ANCAMAN
+========================= */
 
 .materi {
-    padding: 70px 0;
-}
-
-.materi h1 {
-    color: #31552d;
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 35px;
 }
 
 .materi h2 {
-    color: #31552d;
+    text-align: center;
+    color: #2e7d32;
     font-weight: bold;
-    margin-top: 30px;
     margin-bottom: 15px;
 }
 
-.materi h3 {
-    color: #52783b;
+.materi > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* CARD ANCAMAN */
+
+.ancaman {
+    background-color: #dff0a8;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #4caf50;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.ancaman h3 {
+    color: #2e7d32;
+    font-size: 21px;
     font-weight: bold;
+    margin-bottom: 12px;
 }
 
-.materi p {
-    color: #555;
-    line-height: 1.8;
-}
-
-.materi ul {
-    padding-left: 25px;
-}
-
-.materi li {
-    margin-bottom: 10px;
+.ancaman p {
+    color: #444;
+    margin-bottom: 0;
+    text-align: justify;
     line-height: 1.7;
 }
 
-.ancaman-image {
-    display: block;
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    margin: 30px auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+/* HOVER */
+
+.ancaman:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+/* ==============================
+   PELESTARIAN
+============================== */
+
+.materi {
+    max-width: 1000px;
+    background-color: white;
+    margin: 0 auto 10px auto;
+    padding: 15px 0;
 }
 
+/* Judul dan pengantar */
+.materi h2 {
+    background-color: white;
+    color: #2e7d32;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.materi .container p {
+    max-width: 900px;
+    margin-bottom: 30px;
+    background-color: white;
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+/* ==============================
+   CARD PELESTARIAN
+============================== */
+
+.pelestarian {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    padding: 25px;
+    background-color: #dff0a8;
+    border-radius: 12px;
+    border-left: 5px solid #4caf50;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.pelestarian h3 {
+    color: #2e7d32;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.pelestarian p {
+    background-color: #dff0a8;
+    color: #444;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   EFEK CARD
+============================== */
+
+.pelestarian:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
 
 /* ==============================
    KONTAK
 ============================== */
 
 .kontak {
-    padding: 70px 0;
+    max-width: 900px;
+    margin: 50px auto 30px;
+    padding: 35px;
+    background-color: #dff0a8;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-.kontak h1 {
-    color: #31552d;
+.kontak h2 {
+    text-align: center;
+    color: #2e7d32;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.kontak p {
-    color: #555;
-    line-height: 1.7;
+.kontak > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
 }
 
+
+/* FORM KONTAK */
+
 .kontak form {
-    background-color: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
 }
 
 .kontak label {
-    color: #31552d;
     font-weight: bold;
-    margin-bottom: 8px;
+    color: #2e5d34;
+    margin-bottom: 7px;
 }
 
 .kontak input,
 .kontak textarea {
     width: 100%;
-    border: 1px solid #ccd8a8;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #c8d6c0;
     border-radius: 8px;
-    padding: 10px;
+    font-size: 15px;
 }
 
 .kontak input:focus,
 .kontak textarea:focus {
-    border-color: #8fbd4f;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(143, 189, 79, 0.2);
+    border-color: #4caf50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
 }
 
-.informasi-kontak {
-    margin-top: 30px;
-}
-
-.informasi-kontak h3 {
-    color: #52783b;
-    font-weight: bold;
-}
-
-.informasi-kontak p {
-    margin-bottom: 10px;
+.kontak textarea {
+    resize: vertical;
 }
 
 
-/* ==============================
-   TOMBOL
-============================== */
+/* TOMBOL */
 
-.btn-custom {
-    background-color: #8fbd4f;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.btn-custom:hover {
-    background-color: #6f9f3d;
-    color: white;
-}
-
-.btn-kembali {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 10px 22px;
-    background-color: #8fbd4f;
-    color: white;
+.kontak button {
+    padding: 11px 20px;
     border: none;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    margin-top: 5px;
+    margin-right: 8px;
 }
 
-.btn-kembali:hover {
-    background-color: #6f9f3d;
+.kontak button[type="submit"] {
+    background-color: #2e7d32;
     color: white;
+}
+
+.kontak button[type="submit"]:hover {
+    background-color: #1b5e20;
+}
+
+.kontak button[type="reset"] {
+    background-color: #d9e2d3;
+    color: #333;
+}
+
+.kontak button[type="reset"]:hover {
+    background-color: #c5d1bf;
+}
+
+
+/* =========================
+   INFORMASI KONTAK
+========================= */
+
+.informasi-kontak {
+    max-width: 900px;
+    margin: 30px auto 50px;
+    padding: 30px;
+    background-color: #e4f1d5;
+    border-radius: 15px;
+    border-left: 6px solid #2e7d32;
+}
+
+.informasi-kontak h2 {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.informasi-kontak p {
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 
@@ -491,6 +586,7 @@ img {
     margin-top: 20px;
     font-size: 14px;
 }
+
 
 
 /* ==============================
